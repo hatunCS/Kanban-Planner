@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+html, body {
+    background-color:  #242439;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: auto;
+    gap: .2em;
+}
+
+
+
+
+.navmenu{
+
+}
+
+/* Toolbar icons */
+.toolbar{
+    display: flex;
+    background-color: #0e0d24;
+    border-radius: 1em;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    gap: .5em;
+}
+
+.tbbutton {
+    display: flex;
+    align-items: center;
+    background-color: #dadada;
+    filter: invert(1);
+    gap: .1em;
+    border-radius: 1em;
+}
+
+.projectinfo{
+    margin-left: auto;
+}
+
+/* Taskboard Area */
+.taskboard{
+    display: flex;
+    flex: 1;
+    background-color: #0e0d24;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    gap: .2em;
+    padding: .5rem;
+    overflow-x: auto;
+    padding-bottom: 1px;
+    min-width: 200px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #242439;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+    padding-top: 0px;
+}
+
+.cheader{
+    background-color: black;
+    display:flex;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+    padding-left: 1rem;
+    font-size: 1vw;
+    
+}
+
+
+
+
+
+.nextuph{
+    background-color: #300030;
+}
+
+.inprogressh{
+    background-color: #6d5900;
+}
+
+.pendingreviewh{
+    background-color: #3f1809;
+}
+
+.finishedh{
+    background-color: hsl(120, 93%, 11%);
+}
+
+.taskbox{
+    flex: 1;
+    /* background-color: wheat; */
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+    padding-top: 0px;
+}
+
+.backlog{
+    background-color: #373738;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    padding-top: .5em;
+    max-width: 3%;
+    padding-top: 10em;
+}
+.backlogtext{
+    transform: rotate(-90deg);
+}

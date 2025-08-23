@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Kanban Inspired Planner</title>
+    <link href="style/index.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <div class = "toolbar">
+        <button class = "tbbutton addtask"> 
+            <img src="/Coding/Kanban Program/assets/icons/addtask.png" alt="Add Task" width="25" height="25">
+            Add Task
+        </button>
+        <button class = "tbbutton delete"> 
+            <img src="/Coding/Kanban Program/assets/icons/delete.png" alt="Add Task" width="25" height="25">
+            Delete Task
+        </button>
+        <button class = "tbbutton search"> 
+            <img src="/Coding/Kanban Program/assets/icons/search.png" alt="Add Task" width="20" height="20">
+            Search
+        </button>
+        <button class = "tbbutton filter"> 
+            <img src="/Coding/Kanban Program/assets/icons/filter.png" alt="Add Task" width="15" height="15">
+            Filter
+        </button>
+        <button class = "tbbutton projectinfo"> 
+            <img src="/Coding/Kanban Program/assets/icons/aboutproject.png" alt="Add Task" width="25" height="25">
+            Project Info
+        </button> 
+        <button class = "tbbutton devinfo"> 
+            <img src="/Coding/Kanban Program/assets/icons/aboutme.png" alt="Add Task" width="20" height="20">
+            Developer Info
+        </button>                         
+    </div>
+    
+    <div class = "taskboard">
+
+        <div class = "column backlog">
+            <h2 class="backlogtext">Backlog</h2>
+        </div>
+
+        <div class = "column nextup">
+            <div class = "cheader nextuph">
+                <h2>Next Up</h2> 
+            </div>
+            <div class = "taskbox nextup">
+            </div>           
+        </div>
+
+        <div class = "column inprogress">
+            <div class = "cheader inprogressh">
+                <h2>In Progress</h2>  
+            </div>
+            <div class = "taskbox inprogress">
+            </div>          
+        </div>
+
+        <div class = "column pendingreview">
+            <div class = "cheader pendingreviewh">
+                <h2>Pending Review</h2>  
+            </div>
+            <div class = "taskbox pendingreview">
+            </div>                      
+        </div>
+
+        <div class = "column finished">
+            <div class = "cheader finishedh">
+                <h2>Finished</h2>
+            </div>
+            <div class = "taskbox finished">
+            </div>                         
+        </div>
+
+    </div>
+
+    
+</body>
