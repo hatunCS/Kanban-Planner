@@ -10,13 +10,6 @@ html, body {
     gap: .2em;
 }
 
-
-
-
-.navmenu{
-
-}
-
 /* Toolbar icons */
 .toolbar{
     display: flex;
@@ -65,45 +58,7 @@ html, body {
     padding-top: 0px;
 }
 
-.cheader{
-    background-color: black;
-    display:flex;
-    border-top-left-radius: .2em;
-    border-top-right-radius: .2em;
-    padding-left: 1rem;
-    font-size: 1vw;
-    
-}
-
-
-
-
-
-.nextuph{
-    background-color: #300030;
-}
-
-.inprogressh{
-    background-color: #6d5900;
-}
-
-.pendingreviewh{
-    background-color: #3f1809;
-}
-
-.finishedh{
-    background-color: hsl(120, 93%, 11%);
-}
-
-.taskbox{
-    flex: 1;
-    /* background-color: wheat; */
-    border-top-left-radius: .2em;
-    border-top-right-radius: .2em;
-    padding-top: 0px;
-}
-
-.backlog{
+.column.backlog{ /*overrides the column settings ONLY for the backlog column*/
     background-color: #373738;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
@@ -111,6 +66,63 @@ html, body {
     max-width: 3%;
     padding-top: 10em;
 }
-.backlogtext{
+
+#backlogtext{
     transform: rotate(-90deg);
+}
+
+
+.columnHeader{ /*sets the size and shape of each columns header*/
+    display:flex;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+    padding-left: 1rem;
+    font-size: 1vw;
+}
+
+#nextUpHeader{ /*changes the color of this individual columns header*/
+    background-color: #300030;
+}
+
+#inProgressHeader{ /*changes the color of this individual columns header*/
+    background-color: #6d5900;
+}
+
+#pendingReviewHeader{ /*changes the color of this individual columns header*/
+    background-color: #3f1809;
+}
+
+#finishedHeader{ /*changes the color of this individual columns header*/
+    background-color: hsl(120, 93%, 11%);
+}
+
+.taskbox{ /*the taskbox area that holds tasks under each individual column*/
+    flex: 1;
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+    padding-top: 0px;
+}
+
+/* Modal Boxes */
+
+.modal{
+    display: none; /* Defaults to hidden */
+    position: fixed; 
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); /* dim background */
+    justify-content: center; align-items: center;
+}
+
+.modal-content {
+  background: #0e0d24;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
 }
