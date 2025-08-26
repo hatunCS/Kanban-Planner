@@ -96,13 +96,27 @@ html, body {
     background-color: hsl(120, 93%, 11%);
 }
 
-.taskbox{ /*the taskbox area that holds tasks under each individual column*/
+.taskBoxArea{ /*the taskbox area that holds tasks under each individual column*/
     flex: 1;
     border-top-left-radius: .2em;
     border-top-right-radius: .2em;
-    padding-top: 0px;
+    padding: .2em;
 }
 
+/* Appearance of each individual created taskbox */
+.task {
+    display: flex;
+    background-color: #2e2e2e;
+    border-radius: .2em;
+    border: 1px solid white;
+    padding: .1em;
+}
+
+.taskPriority {
+    width: .5em;
+    height: 2em;
+    background-color: rgb(255, 255, 255);
+}
 /* Modal Boxes */
 
 .modal{

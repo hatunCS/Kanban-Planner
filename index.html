@@ -47,7 +47,8 @@
             <div class = "columnHeader" id = "nextUpHeader">
                 <h2>Next Up</h2> 
             </div>
-            <div class = "taskbox nextup">
+            <div class = "taskBoxArea" id="nextUpTasks">
+                <!-- //here is where I want a new taskbox to appear upon add task submission -->
             </div>           
         </div>
 
@@ -55,7 +56,7 @@
             <div class = "columnHeader" id = "inProgressHeader">
                 <h2>In Progress</h2>  
             </div>
-            <div class = "taskbox inprogress">
+            <div class = "taskBoxArea" id = "inProgressTasks">
             </div>          
         </div>
 
@@ -63,7 +64,7 @@
             <div class = "columnHeader" id = "pendingReviewHeader">
                 <h2>Pending Review</h2>  
             </div>
-            <div class = "taskbox pendingreview">
+            <div class = "taskBoxArea" id = "pendingReviewTasks">
             </div>                      
         </div>
 
@@ -71,7 +72,7 @@
             <div class = "columnHeader" id = "finishedHeader">
                 <h2>Finished</h2>
             </div>
-            <div class = "taskbox finished">
+            <div class = "taskBoxArea" id = "finishedTasks">
             </div>                         
         </div>
 
@@ -80,6 +81,7 @@
 <!-- 'Add Task' Modal     -->
     <div class = "modal" id = "addTaskModal">
         <div class = "modal-content">
+            <span class="close">&times;</span>
             <h2> Add a Task </h2>
             <form id = "addTaskForm">
                 <label for="taskTitle">Task Title: </label>
